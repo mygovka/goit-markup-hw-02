@@ -8,12 +8,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
             <!--Шапка сайту-->
-        <header>
-            <nav>
+        <header class="header">
+            <div class="container">
+            <nav class>
             <a class="main-logo" href="#">Web<span class="logo">Studio</span></a>
             <ul class="nav-list">
                 <li> <a class="nav-link current" href="">Студія</a></li>
@@ -21,6 +23,7 @@
                 <li><a class="nav-link" href="">Контакти</a></li>
             </ul>
             </nav>  
+            </div>
 
             <ul class="menu-list">
                 <li> <a  class="menu-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -30,11 +33,14 @@
         <!--Основне-->
         <main>            
             <section class="hero">
+                <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="main-button" type="button">Замовити послугу</button>
+                </div>  
             </section>
             <!--Про компанію-->
-            <section class="section">
+            <section class="section-second">
+                <div class="container">
                 <h2 class="section-title visually-hidden">Наші переваги</h2>
                 <ul class="benefits">
                     <li>
@@ -54,24 +60,28 @@
                         <p class="features-subtitle">Значимість цих проблем настільки<br> очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
+                </div>
             </section>
             <section class="section">
+                <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="works">
-                    <li>
+                    <li class="work-item">
                         <img src="./images/box1.jpg" alt="computer" width="370">
                     </li>
-                    <li>
+                    <li class="work-item" >
                         <img src="./images/box2.jpg" alt="mobile phone" width="370">
                     </li>
-                    <li>
+                    <li class="work-item">
                         <img src="./images/box3.jpg" alt="tablet" width="370">
                     </li>
                 </ul>
+                </div>
             </section>
 
             <!--Команда-->
-            <section class="team">
+            <section class="section">
+                <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="employees-list">
                     <li class="team-item">
@@ -95,12 +105,15 @@
                         <p  class="job-title"lang="en">UI Designer</p>
                     </li>
                 </ul>
+                </div>
             </section>
         </main>
     
         <!--Футер-->
         <footer class="footer">
-            <a class="main-logo"href="#">Web<span class="logo">studio</span></a>
+
+            <div class="container">
+            <a class="main-logo" href="#">Web<span class="logo">studio</span></a>
             <address>
             <ul class="footer-list">
                 <li>
@@ -116,6 +129,7 @@
                 </li>   
             </ul>
             </address>
+            </div>
         </footer>
     </body>
     </html>

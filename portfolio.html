@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
      <!--Шапка сайту-->
     <header>
-        
         <nav>
+            <div class="container">
             <a class="main-logo" href="./index.html">Web<span class="logo">Studio</span></a>
             <ul class="nav-list">
-                <li> <a class="nav-link" href="">Студія</a></li>
+                <li> <a class="nav-link" href="./index.html">Студія</a></li>
                 <li><a class="nav-link current" href="">Портфоліо</a></li>
                  <li><a class="nav-link" href="">Контакти</a></li>
             </ul>
+            </div>
         </nav>  
 
         <ul class="menu-list">
@@ -30,7 +32,8 @@
     </header>
     <!-- Основне -->
     <main>
-        <section>
+        <section class="section">
+            <div class="container">
             <h1 class="visually-hidden">Portfolio</h1>
             <ul class="button-list">
           <li><button class="button" type="button">Усі</button></li>
@@ -39,8 +42,10 @@
           <li><button class="button" type="button">Дизайн</button></li>
           <li><button class="button" type="button">Маркетинг</button></li>
         </ul>
+        </div>
         </section>
-        <section>
+        <section class="section">
+            <div class="container">
              <ul class="project-list">
                 <li>
                     <a class="project-link" href="#">
@@ -108,10 +113,12 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </section>
     </main> 
     <!--Футер-->
     <footer class="footer">
+        <div class="container">
         <a class="main-logo" href="#">Web<span class="logo">studio</span></a>
         <address>
         <ul class="footer-list">
@@ -128,6 +135,7 @@
             </li>   
         </ul>
         </address>
+        </div>
     </footer>   
 </body>
 </html>
