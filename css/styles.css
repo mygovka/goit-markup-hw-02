@@ -90,7 +90,7 @@ address {
 }
   
 
-
+/* header */
 
 .header{
     display:flex;
@@ -100,8 +100,6 @@ address {
     padding-bottom: 32px;
 }
 
-
-/* header */
 
 
 .header-container{
@@ -172,15 +170,7 @@ address {
 {
  color: var(--color-akcent);
 }
-/* title */
-
-
-/* .hero-container{
-    height: 600px;
-    margin-bottom: 94px;
-    
-
-} */
+ /* title  */
 
 
 
@@ -355,6 +345,8 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+
 /* footer */
 .footer{
     background-color: #2F303A;
