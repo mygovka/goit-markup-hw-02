@@ -36,14 +36,14 @@ body{
 } 
 
     /* Утиліти */
-h1
-h2
-h3
-h4
-h5
-h6
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p{
-    margin-top: 0;
+    margin:0;
 }
 
 .list{
@@ -85,8 +85,7 @@ address {
 
 .section{
     display: flex;
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
+  
 }
   
 
@@ -96,8 +95,7 @@ address {
     display:flex;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
-    padding-top: 32px;
-    padding-bottom: 32px;
+   
 }
 
 
@@ -112,8 +110,6 @@ address {
 
 .header-nav{
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
     align-items: center
 }
 
@@ -122,14 +118,14 @@ address {
     list-style:none;
     display: flex;
     margin: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
     gap: 50px;
-    /* margin-right-50px */
     margin-left:93px;
-    margin-right:auto;
+    
+    
     
 }
+
+
 
 .nav-link{
     padding-top: 32px;
@@ -153,13 +149,14 @@ address {
     display: flex;
     gap: 40px;
     margin: 0;
-    padding-top: 32;
-    padding-bottom: 32;
+ 
   
 }
 .menu-contact{
     text-decoration: none;
     list-style: none;
+    padding-top: 32;
+    padding-bottom: 32;
     color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.14;
@@ -179,7 +176,9 @@ address {
    
     background-color:#2F303A;    
     text-align: center;
-    margin-bottom: 94px;   
+    padding-top: 200px; 
+    padding-bottom: 200px;
+
     
 }
 
@@ -241,10 +240,10 @@ address {
 
 .benefits{
     list-style: none;
-    /* margin-top: 94px; */
+    
     display: flex;
     justify-content: space-between;
-    margin-bottom: 118px;
+   
     
 }
 
@@ -278,7 +277,7 @@ address {
 
 .section-title{
     color: var(--color-primary);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     list-style: none;
     font-weight: 700;
     font-size: 36px;
@@ -302,22 +301,32 @@ address {
     margin-right: 0;
 }
 
+.team-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 
 .works{
     list-style: none;
     display: flex;
+    
  
 }
 
-.works-item:last-child{
-    margin-right: 0;
-}
 
 .work-item{
-    margin-bottom: 30px;
+    margin: bottom 0;
     margin-right: 30px;
     
 }
+
+.work-item:last-child{
+
+    margin-right: 0;
+}
+   
+
 
 .employees-list{
     list-style: none;
@@ -350,12 +359,12 @@ address {
 /* footer */
 .footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-list{
     list-style: none;
-    margin-top: 28px;
-    
-    
+
 }
 
 .adress{
@@ -421,6 +430,11 @@ footer.footer>div a.main-logo>span{
 
 
 
+
+
+
+
+
 /* portfolio */
 .button-list{
     text-decoration: none;
@@ -428,6 +442,8 @@ footer.footer>div a.main-logo>span{
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
     
     
     
@@ -458,7 +474,8 @@ footer.footer>div a.main-logo>span{
     letter-spacing: 0.03em;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 50px;
+    
+    
     
 }
 
@@ -484,8 +501,8 @@ footer.footer>div a.main-logo>span{
     list-style: none;
     display: flex;
     flex-wrap: wrap; 
-    margin: -15px;  
-    margin-bottom: 0;  
+      
+    
         
 }
 
@@ -493,8 +510,10 @@ footer.footer>div a.main-logo>span{
     width: 370px;
     display: flex;
     flex-wrap: wrap;
-    margin: 15px;
-    border: 1px solid #EEEEEE;
+    flex-basis: calc((100%-60px)/3);
+    gap: 30px;
+    /* margin: 15px; */
+    
 }
 
 .cards{
@@ -502,6 +521,9 @@ footer.footer>div a.main-logo>span{
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom:1px solid #EEEEEE;
+    border-right:1px solid #EEEEEE;
+    border-left:1px solid #EEEEEE;
 }
 
 
