@@ -240,7 +240,6 @@ address {
 
 .benefits{
     list-style: none;
-    
     display: flex;
     justify-content: space-between;
    
@@ -263,7 +262,6 @@ address {
     line-height:1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* text-align: center; */
     margin-bottom: 10px;
 }
 
@@ -277,7 +275,6 @@ address {
 
 .section-title{
     color: var(--color-primary);
-    /* margin-bottom: 50px; */
     list-style: none;
     font-weight: 700;
     font-size: 36px;
