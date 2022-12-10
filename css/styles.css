@@ -87,7 +87,7 @@ address {
  }
 
 .section{
-    padding-top: 94px;
+    
     padding-bottom: 94px;
   
 }
@@ -203,6 +203,7 @@ address {
 .main-button{
     background-color: var(--color-akcent);
     display: inline-block;
+    border: none;
     min-height: 50px;
     min-width:216px;
     padding-top: 10px;
@@ -371,7 +372,7 @@ address {
 
 .adress{
     color: var(--color-bgc);
-    margin-bottom:12px;
+    margin-bottom: 12px;
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -388,7 +389,7 @@ address {
 
 .footer-contact{
     color: var(--color-footer-text);
-    margin-bottom: 12px;
+    margin-bottom:12px;
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0.03em;
@@ -472,6 +473,7 @@ footer.footer>div a.main-logo>span{
 .button{
     background-color: var(--color-bgc-secondary);
     color: var(--color-primary);
+    border: none;
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
