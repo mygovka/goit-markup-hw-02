@@ -88,7 +88,7 @@ address {
  }
 
 .section{
-    padding-left: 94px;
+    padding-top: 94px;
     padding-bottom: 94px;
   
 }
@@ -139,11 +139,14 @@ address {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.nav-link:hover, 
-.nav-link:focus, 
+.nav-link:hover,  
+.nav-link:focus,
 .nav-link:active{
     color: var(--color-akcent);
 }
+
+    
+
 .menu-list{
     list-style: none;
     display: flex;
@@ -157,8 +160,8 @@ address {
     display: flex;
     align-items: center;
     list-style: none;
-    padding-top: 32;
-    padding-bottom: 32;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--color-secondary);
     font-weight: 500;
     line-height: 1.14;
@@ -167,19 +170,19 @@ address {
 
 .mail-icon{
     margin-right: 10px;
-    fill: var(--color-secondary);
+    fill:currentColor;
 }
 .mail-icon:hover{
-    fill: var(--color-akcent);
+    fill:var(--color-akcent);
 }
 
 .phone-icon{
     margin-right: 10px;
-    fill: var(--color-secondary);
+    fill:currentColor;
 }
 
  .phone-icon:hover{
-    fill: var(--color-akcent);
+    fill:var(--color-akcent);
 }
 .menu-contact:hover,
 .menu-contact:focus
@@ -189,16 +192,15 @@ address {
  /* title  */
 
  .hero{
-    background-color:#2F303A;    
+    background-color:#C4C4C4;    
     text-align: center;
     padding-top: 200px; 
     padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)),url(../images/bckimg.png);
-    background-size: contain;
+    background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
 }
@@ -218,7 +220,6 @@ address {
 
 .main-button{
     background-color: var(--color-akcent);
-    display: inline-block;
     border: none;
     min-height: 50px;
     min-width:216px;
@@ -241,7 +242,7 @@ address {
 .main-button:focus,
 .main-button:hover{
     background-color: #188CE8;
-    color: var(--color-bgc);
+    border: none;
 }
 
 /* About company */
@@ -392,6 +393,10 @@ address {
     list-style: none;
     display:block;
     
+}
+
+.info-item{
+    margin-bottom: 12px;
 }
   
 .adress{
@@ -544,7 +549,8 @@ margin-right: 0;
     list-style:none
 }
 
-.project-link:hover,:focus{
+.project-link:hover,
+.project-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-name{
@@ -573,10 +579,10 @@ margin-right: 0;
 .socials-list{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    
 }
 
 .socials-item{
@@ -595,7 +601,11 @@ margin-right: 0;
     background-color: var(--color-bgc);
     fill:var(--color-additional);
 }
-.socials-link:hover,:focus{
+.socials-link:hover{
+    background-color: var(--color-akcent);
+    fill:var(--color-bgc);
+}
+.socials-link:focus{
     background-color: var(--color-akcent);
     fill:var(--color-bgc);
 }
@@ -609,13 +619,11 @@ font-size: 36px;
 line-height:1.16;
 text-align: center;
 letter-spacing: 0.03em;
-padding-top: 94px;
 margin-bottom: 50px;
-
 }
 
 .client-list{
-    margin-top: 50px;
+    
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -640,11 +648,15 @@ margin-bottom: 50px;
     height: 100%;
 }
 
-.client-link:hover,:focus{
-    border: 1px solid var(--color-akcent);
+.client-link:hover{
+    border:1px solid var(--color-akcent);
     fill: var(--color-akcent);
 }
 
+.client-link:focus{
+    border:1px solid var(--color-akcent);
+    fill: var(--color-akcent);
+}
 
 /* Footer-socials */
 .footer-container{
@@ -685,7 +697,11 @@ margin-bottom: 50px;
     fill:var(--color-bgc);
 }
 
-.footer-link:hover,:focus{
+.footer-link:hover{
+    background-color:var(--color-akcent);
+    fill:var(--color-bgc);
+}
+.footer-link:focus{
     background-color:var(--color-akcent);
     fill:var(--color-bgc);
 }
