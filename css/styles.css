@@ -1041,10 +1041,8 @@ margin-bottom: 50px;
     border: transparent;
 }
 
-.check-box{
-    display: flex;
-    
-}
+
+
 .checkbox-input{
     appearance:none;
 }
@@ -1057,30 +1055,32 @@ margin-bottom: 50px;
     
     
 }
+.checkbox-input:checked{
+    fill: transparent;
+    border-radius: 2px;
+}
 
 
 .checkbox-icon{
+    
     fill: transparent;
     border: 2px solid var(--color-primary);
     border-radius: 2px;
     margin-right: 9px;
 }
 
-.checkbox-label:checked+ .checkbox-icon{
+.checkbox-input:checked+ .checkbox-icon{
     fill: var(--color-bgc);
     background-color: var(--color-akcent);
     border-color: var(--color-akcent);
 }
-/* 
-.checkbox-input+ .checkbox-label{
-    color: var(--color-akcent);
 
-} */
 
 .checkbox-link{
-    
-   color: var(--color-akcent);
+    color: var(--color-akcent);
+    inline
 }
+
 
 
 
