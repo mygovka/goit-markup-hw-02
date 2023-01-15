@@ -1,0 +1,36 @@
+* *::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-bgc;
+    color: $color-primary;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+.list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+address {
+    font-style: normal;
+}

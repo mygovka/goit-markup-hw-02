@@ -1,0 +1,45 @@
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+.menu-contact {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $color-secondary;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-akcent;
+    }
+
+}
+
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover {
+        fill: $color-akcent;
+    }
+}
+
+.phone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:hover {
+        fill: $color-akcent;
+    }
+}

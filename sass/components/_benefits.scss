@@ -1,0 +1,30 @@
+.benefits {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: $color-bgc-secondary;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+}
+
+.benefits__item {
+    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before {
+        background-image: url(../images/);
+    }
+}

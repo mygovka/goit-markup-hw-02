@@ -1,0 +1,41 @@
+.form-field-checkbox {
+    margin-bottom: 30px;
+    border: transparent;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-label {
+    padding-left: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: $color-secondary;
+
+
+}
+
+.checkbox-input:checked {
+    fill: transparent;
+    border-radius: 2px;
+
+    &+.checkbox-icon {
+        fill: $color-bgc;
+        background-color: $color-akcent;
+        border-color: $color-akcent;
+    }
+}
+
+.checkbox-icon {
+
+    fill: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 2px;
+    margin-right: 9px;
+}
+
+.checkbox-link {
+    color: $color-akcent;
+}
