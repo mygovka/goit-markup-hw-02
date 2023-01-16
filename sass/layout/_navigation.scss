@@ -26,7 +26,13 @@
     &:active {
         color: $color-akcent;
     }
+
+    &--current{
+        color: $color-akcent;
+    }
 }
+
+
 
 .nav__link--current::after {
     content: '';

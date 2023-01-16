@@ -61,6 +61,10 @@
     margin-bottom: 12px;
 }
 
+.info-item:last-child{
+    margin-bottom: 0;
+}
+
 .adress {
     color: $color-bgc;
     margin-bottom: 12px;

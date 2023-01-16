@@ -5,11 +5,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
 
-    &__subtitle {
-        color: $color-bgc-secondary;
-        margin: 0;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-    }
+.features__subtitle {
+    color:$color-secondary;
+    margin: 0;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }

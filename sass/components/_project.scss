@@ -1,3 +1,10 @@
+.cards{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
+}
 .project-list {
     list-style: none;
     display: flex;
@@ -13,6 +20,8 @@
     &:nth-child(3n) {
         margin-right: 0;
     }
+
+border: 1px solid #EEEEEE;
 }
 
 .project-link {
