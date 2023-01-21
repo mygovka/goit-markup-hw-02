@@ -2,12 +2,12 @@
     background-color: $color-akcent;
     border: none;
     min-height: 50px;
-    min-width: 216px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 0;
+    // min-width: 216px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // padding-left: 24px;
+    // padding-right: 24px;
+    // margin-bottom: 0;
     border-radius: 4px;
     color: $color-bgc;
     font-family: inherit;
@@ -28,14 +28,14 @@
 }
 
 .subscribe-button {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 28px;
-    gap: 10px;
-    height: 50px;
-    width: 200px;
+    // display: flex;
+    // align-items: center;
+    // padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-left: 28px;
+    // gap: 10px;
+    // height: 50px;
+    // width: 200px;
     background-color: $color-akcent;
     color: $color-bgc;
 
@@ -51,10 +51,10 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-submit-button {
-    width: 200px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
+    // width: 200px;
+    // height: 50px;
+    // display: block;
+    // margin: 0 auto;
 
     font-weight: 700;
     font-size: 16px;

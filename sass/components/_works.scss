@@ -1,14 +1,14 @@
 .works {
-    list-style: none;
-    display: flex;
-}
+//     list-style: none;
+//     display: flex;
+// }
 
 .work-item {
-    margin: bottom 0;
-    margin-right: 30px;
+    // margin: bottom 0;
+    // margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0;
+    // &:last-child {
+    //     margin-right: 0;
     }
 }
 
@@ -19,8 +19,8 @@
 .work-names {
     position: absolute;
     background-color: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
+    // width: 370px;
+    // height: 70px;
     transform: translateY(-100%);
 }
 
@@ -32,6 +32,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    // padding-top: 27px;
+    // padding-bottom: 27px;
 }

@@ -360,21 +360,20 @@ ul {
   list-style-type: none;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
-
-.section-second {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-title {
@@ -390,54 +389,33 @@ ul {
 
 .section-team {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #ECECEC;
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #FFFFFF;
 }
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-}
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+.menu-button .icon-close {
+  display: none;
 }
 
 .nav__list {
+  display: none;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
-  gap: 50px;
-  margin-left: 93px;
 }
 
 .nav__link {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   display: block;
   -webkit-box-align: center;
@@ -454,41 +432,16 @@ ul {
 .nav__link:hover, .nav__link:focus, .nav__link:active {
   color: #2196F3;
 }
-.nav__link--current {
-  color: #2196F3;
-}
-
-.nav__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196F3;
-}
 
 .header__menu-list {
+  display: none;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
   margin: 0;
 }
 
 .menu-link {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   list-style: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
@@ -593,22 +546,9 @@ ul {
 
 .project-list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
 }
 
 .project-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #EEEEEE;
 }
 .project-item:nth-child(3n) {
@@ -690,21 +630,9 @@ ul {
 
 .footer {
   background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-list {
   list-style: none;
-  display: block;
-}
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: 70px;
 }
 .footer__join {
   font-weight: 700;
@@ -714,29 +642,12 @@ ul {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-.footer__socials-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
 .footer__item {
   width: 44px;
   height: 44px;
 }
 
 .footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: #FFFFFF;
@@ -750,10 +661,6 @@ ul {
 .footer__link:focus {
   background-color: #2196F3;
   fill: #FFFFFF;
-}
-
-.info-item {
-  margin-bottom: 12px;
 }
 
 .info-item:last-child {
@@ -800,12 +707,6 @@ footer.footer > div a.main-logo > span {
   margin-bottom: 20px;
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .subscribe-text {
   font-style: normal;
   font-weight: 700;
@@ -818,10 +719,6 @@ footer.footer > div a.main-logo > span {
 }
 
 .footer-subscribe {
-  height: 50px;
-  width: 358px;
-  margin-right: 12px;
-  padding-left: 16px;
   background-color: transparent;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -868,12 +765,6 @@ footer.footer > div a.main-logo > span {
   background-color: #2196F3;
   border: none;
   min-height: 50px;
-  min-width: 216px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 0;
   border-radius: 4px;
   color: #FFFFFF;
   font-family: inherit;
@@ -892,18 +783,6 @@ footer.footer > div a.main-logo > span {
 }
 
 .subscribe-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 28px;
-  gap: 10px;
-  height: 50px;
-  width: 200px;
   background-color: #2196F3;
   color: #FFFFFF;
   font-weight: 700;
@@ -920,10 +799,6 @@ footer.footer > div a.main-logo > span {
 }
 
 .form-submit-button {
-  width: 200px;
-  height: 50px;
-  display: block;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
