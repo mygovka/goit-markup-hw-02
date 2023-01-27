@@ -8,13 +8,17 @@
 }
 
 .checkbox-label {
-    padding-left: 24px;
+    font-size: 8px;
     position: relative;
     display: flex;
     justify-content: center;
     color: $color-secondary;
-
-
+    @media screen and(min-width:400px) {
+    font-size: 10px;
+}
+    @media screen and(min-width:450px) {
+    font-size: 12px;
+}
 }
 
 .checkbox-input:checked {

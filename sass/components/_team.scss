@@ -2,17 +2,28 @@
 
 .team__item {
     background-color: $color-bgc;
+    margin-bottom: 30px;
+   
     // margin-right: 30px;
-    width: 100%;
+   
+     @media screen and(min-width:$tablet){
+        width: calc((100% - 30px) / 2);
+     }
 
-    &:last-child {
-        // margin-right: 0;
-    }
-}
+     
+     @media screen and(min-width:$desktop){
+        width: calc((100% - 90px) / 4);
+     }
+     
+     }
+   
+ 
+
 
 .team__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // margin-bottom: 30px;
 }

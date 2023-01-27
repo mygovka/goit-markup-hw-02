@@ -1,8 +1,19 @@
 .employees__list {
     list-style: none;
     background-color: $color-bgc-secondary;
-    // display: flex;
-}
+
+    @media screen and(min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        display: flex;
+    }
+    
+  }
+
 
 .employees__names {
     color: $color-primary;

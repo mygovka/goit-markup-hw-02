@@ -1,6 +1,6 @@
-// .footer-form {
-//     display: flex;
-// }
+.footer-form {
+    display: flex;
+}
 
 .subscribe-text {
     font-style: normal;
@@ -14,10 +14,10 @@
 }
 
 .footer-subscribe {
-    // height: 50px;
-    // width: 358px;
-    // margin-right: 12px;
-    // padding-left: 16px;
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
     background-color: transparent;
     color: $color-bgc;
     border: 1px solid rgba(255, 255, 255, 0.3);

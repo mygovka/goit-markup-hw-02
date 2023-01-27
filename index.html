@@ -36,6 +36,35 @@
                                 </svg>
                                 +38 096 111 11 11</a></li>
                             </ul>
+                            <!-- burger-button -->
+                            <button type="button" class="burger-button js-open-menu">
+                                <svg width="24" height="16" class="burger-icon">
+                                    <use href="./images/icons.svg#icon-menu"></use>
+                                </svg>
+                            </button>
+                            <!-- mob-menu -->
+                            <div class="menu-container js-menu-container" id="mobile-menu">
+                                <button  type="button" class="button-close-menu js-close-menu">
+                                    <svg width="40" height="40" class="icon-close-menu">
+                                    <use href="./images/icons.svg#icon-close_menu"></use>
+                                    </svg>
+                                </button>
+                                <ul class="mobile-menu">
+                                    <li><a href="" class="mob-menu-link">Студія</a></li>
+                                    <li><a href="" class="mob-menu-link">Портфоліо</a></li>
+                                    <li><a href="" class="mob-menu-link">Контакти</a></li>
+                                </ul>
+                                <ul class="contact-mob-menu">
+                                    <li><a class="mob-menu-tel" href="+380961111111">+38096111111</a></li>
+                                    <li> <a class="mob-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                </ul>
+                                <ul class="socials-mob-menu">
+                                    <li><a href="" class= "mob-menu-socials">Instagram</a></li>
+                                    <li><a href="" class="mob-menu-socials">Twitter</a></li>
+                                    <li><a href="" class= "mob-menu-socials">Facebook</a></li>
+                                    <li><a href="" class="mob-menu-socials">LinkedIn</a></li>
+                                </ul>
+                            </div>
                 </div>
             </div>
         </header>
@@ -49,7 +78,7 @@
                 </div>  
             </section>
             <!--Про компанію-->
-            <section class="section-second">
+            <section class=" section section-second">
                 <div class="container">
                 <h2 class="section_title visually-hidden">Наші переваги</h2>
                 <ul class="benefits">
@@ -92,7 +121,7 @@
                 </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section about">
                 <div class="container">
                         <h2 class="section-title">Чим ми займаємося</h2>
                         <ul class="works">
@@ -326,7 +355,7 @@
         </main>
     
         <!--Футер-->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer__container">
                     <div class="info">
@@ -394,7 +423,7 @@
                     </div>
                 </div>
             </div>    
-        </footer>
+        </footer> -->
 
         <!-- modal -->
         <div class="backdrop is-hidden" data-modal>
@@ -463,6 +492,10 @@
                     </form>
             </div>
         </div>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
     </html>
