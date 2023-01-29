@@ -946,18 +946,15 @@ ul {
 .footer-list {
   list-style: none;
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__container {
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   gap: 70px;
 }
 .footer__join {
@@ -972,7 +969,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
 }
 .footer__item {
   width: 44px;
@@ -980,16 +976,9 @@ ul {
 }
 
 .footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1016,7 +1005,6 @@ ul {
 
 .adress {
   color: #FFFFFF;
-  margin-bottom: 12px;
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -1088,12 +1076,6 @@ footer.footer > div a.main-logo > span {
   }
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .subscribe-text {
   font-style: normal;
   font-weight: 700;
@@ -1102,12 +1084,10 @@ footer.footer > div a.main-logo > span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
 }
 
 .footer-subscribe {
   height: 50px;
-  width: 358px;
   margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
@@ -1227,19 +1207,25 @@ footer.footer > div a.main-logo > span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 170px;
-    height: 92px;
   }
 }
 
 .client-item {
-  max-width: 210px;
   width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .client-item {
-    max-width: 226px;
     width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 

@@ -28,20 +28,25 @@
 
     @media screen and(min-width:$desktop) {
         display: flex;
-         width: 170px;
-        height: 92px;
+        
+       
     }
     
 }
 
 .client-item {
 
-        max-width: 210px;
+        // max-width: 210px;
         width: calc((100% - 30px)/2);
 
         @media screen and(min-width:$tablet){
-        max-width: 226px;
+        // max-width: 226px;
         width: calc((100% - 90px) / 3);
+        }
+
+        @media screen and( min-width:$desktop) {
+            display: flex;
+            justify-content: baseline;
         }
     }
     //  @media screen and(min-width:$tablet){
