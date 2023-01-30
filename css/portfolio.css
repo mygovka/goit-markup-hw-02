@@ -777,7 +777,28 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 70px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 70px;
+  }
 }
 .footer__join {
   font-weight: 700;
@@ -798,6 +819,12 @@ ul {
 }
 
 .footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -864,6 +891,34 @@ footer.footer > div a.main-logo > span {
   margin-bottom: 20px;
 }
 
+.info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer__socials {
+  text-align: center;
+}
+
+.footer__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscribe-text {
   font-style: normal;
   font-weight: 700;
@@ -872,10 +927,17 @@ footer.footer > div a.main-logo > span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.socials-subscribe {
+  text-align: center;
 }
 
 .footer-subscribe {
   height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
   margin-right: 12px;
   padding-left: 16px;
   background-color: transparent;
@@ -884,6 +946,16 @@ footer.footer > div a.main-logo > span {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    width: 358px;
+  }
 }
 .footer-subscribe::-webkit-input-placeholder {
   font-size: 16px;
@@ -948,6 +1020,7 @@ footer.footer > div a.main-logo > span {
 }
 
 .subscribe-button {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,6 +1084,13 @@ footer.footer > div a.main-logo > span {
   right: 15px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+.button-close-menu:hover {
+  fill: #2196F3;
+}
+.button-close-menu:focus {
+  fill: #2196F3;
 }
 
 .icon-close-menu {

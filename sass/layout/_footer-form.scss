@@ -1,5 +1,7 @@
 .footer-form {
-    // display: flex;
+    @media screen and (min-width:$desktop) {
+        display: flex;
+    }
 }
 
 .subscribe-text {
@@ -10,11 +12,20 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $color-bgc;
-    // margin-bottom: 20px;
+    
+    margin-bottom: 20px;
 }
-
+.socials-subscribe{
+    text-align: center;
+    // @media screen and (min-width:$desktop) {
+    //     text-align: center;
+    // }
+    // // text-align: center;
+}
 .footer-subscribe {
     height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
     // width: 358px;
     margin-right: 12px;
     padding-left: 16px;
@@ -23,6 +34,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and(min-width:$tablet) {
+        width:450px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        width: 358px;
+    }
 
     &::placeholder {
         font-size: 16px;
