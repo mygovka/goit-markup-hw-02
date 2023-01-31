@@ -126,19 +126,25 @@
                         <h2 class="section-title">Чим ми займаємося</h2>
                         <ul class="works">
                             <li class="work-item">
-                                <img class="work-image" src="./images/box1.jpg" alt="computer" width="370">
+                                <img 
+                                    srcset=" ./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                                    src="./images/box1.jpg" alt="computer" width="370">
                                     <div class="work-names">
-                                    <p class="work-text">Десктопні додатки</p>
+                                        <p class="work-text">Десктопні додатки</p>
                                     </div>
                             </li>
                             <li class="work-item" >
-                                <img src="./images/box2.jpg" alt="mobile phone" width="370">
+                                <img 
+                                    srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                                    src="./images/box2.jpg" alt="mobile phone" width="370">
                                     <div class="work-names">
                                         <p class="work-text">Мобільні додатки</p>
                                     </div>
                             </li>
                             <li class="work-item">
-                                <img src="./images/box3.jpg" alt="tablet" width="370">
+                                <img 
+                                    srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                                    src="./images/box3.jpg" alt="tablet" width="370">
                                     <div class="work-names">
                                         <p class="work-text">Дизайнерські рішення</p>
                                     </div>
@@ -153,7 +159,27 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="employees__list">
                     <li class="team__item">
-                        <img src="./images/imgihor.jpg" alt="men in glasses" width="270">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="
+                             ./images/imgihor.jpg 1x,
+                             ./images/imgihor@2x.jpg 2x
+                             "
+                             type="image/jpg" />
+
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/imgihor.jpg 1x,
+                                ./images/imgihor@2x.jpg 2x
+                                " 
+                                type="image/jpg" />
+                        
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/imgihor.jpg 1x,
+                                ./images/imgihor@2x.jpg 2x
+                                " 
+                                type="image/jpg" />
+                            <img src="./images/imgihor.jpg" alt="men in glasses" width="270">
+                        </picture>
+                       
                         <div class="team__card">
                         <h3 class="employees__names">Ігор Дем'яненко</h3>
                         <p class="job__title" lang="en">Product Designer</p>
@@ -190,7 +216,26 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/imgolha.jpg" alt="women blond" width="270">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="
+                                ./images/imgolha.jpg 1x,
+                                ./images/imgolha@2x.jpg 2x
+                                " 
+                                type="image/jpg" />
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/imgolha.jpg 1x,
+                                ./images/imgolha@2x.jpg 2x
+                                " 
+                                type="image/jpg" />
+                        
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/imgolha.jpg 1x,
+                                ./images/imgolha@2x.jpg 2x
+                                "
+                                 type="image/jpg" />
+                            <img src="./images/imgolha.jpg" alt="women blond" width="270">
+                        </picture>
                         <div class="team__card">
                         <h3 class="employees__names">Ольга Рєпіна</h3>
                         <p  class="job__title" lang="en">Frontend Developer</p>
@@ -227,7 +272,25 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/imgmykola.jpg" alt="men in shirt" width="270">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="
+                                ./images/imgmykola.jpg 1x,
+                                ./images/imgmykola@2x.jpg 2x
+                                "
+                                 type="image/jpg" />
+                        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/imgmykola.jpg 1x,
+                                ./images/imgmykola@2x.jpg 2x                      
+                                " 
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/imgmykola.jpg 1x,
+                                ./images/imgmykola@2x.jpg 2x     
+                                " 
+                                type="image/jpg" />
+                            <img src="./images/imgmykola.jpg" alt="men in shirt" width="270">
+                        </picture>
                         <div class="team__card">
                         <h3 class="employees__names">Микола Тарасов</h3>
                         <p class="job__title" lang="en">Marketing</p>
@@ -264,7 +327,25 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/imgmyhailo.jpg" alt="men in t-shirt" width="270">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="
+                                ./images/imgmyhailo.jpg 1x,
+                                ./images/imgmyhailo@2x.jpg 2x         
+                                " 
+                                type="image/jpg" />
+        
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/imgmyhailo.jpg 1x,
+                                ./images/imgmyhailo@2x.jpg 2x                                               
+                                "
+                                 type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/imgmyhailo.jpg 1x,
+                                ./images/imgmyhailo@2x.jpg 2x                              
+                                "
+                                 type="image/jpg" />
+                            <img src="./images/imgmyhailo.jpg" alt="men in t-shirt" width="270">
+                        </picture>
                         <div class="team__card">
                         <h3 class="employees__names">Михайло Єрмаков</h3>
                         <p  class="job__title" lang="en">UI Designer</p>

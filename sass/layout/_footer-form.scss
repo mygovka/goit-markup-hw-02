@@ -14,6 +14,10 @@
     color: $color-bgc;
     
     margin-bottom: 20px;
+
+    @media screen and(min-width:$desktop) {
+        text-align: start;
+    }
 }
 .socials-subscribe{
     text-align: center;

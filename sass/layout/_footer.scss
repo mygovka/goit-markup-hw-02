@@ -21,13 +21,11 @@
         }
         @media screen and(min-width:$desktop) {
             display: flex;
-            // align-items: baseline;
-            gap: 70px;
+            justify-content: space-between;
+            
             }
         }
-        // display: flex;
-        // align-items: baseline;
-        // gap: 70px;
+        
     
 
     &__join {
@@ -43,7 +41,7 @@
 
         display: flex;
         
-        // gap: 10px;
+        
     }
 
     &__item {
@@ -133,13 +131,30 @@ footer.footer>div a.main-logo>span {
 .info{
     text-align: center;
     margin-bottom: 60px;
+    @media screen and(min-width:$desktop) {
+        margin-bottom: 0;
+        text-align: start;
+    }
+
+    .info .logo {
+  @media screen and(min-width:$desktop) {
+    padding: 0;
+  }
+}
 }
 .footer__socials{
     text-align: center;
+    @media screen and(min-width:$desktop) {
+    text-align: start;
+  }
 }
 .footer__socials-list{
 display: flex;
 justify-content: center;
 margin-bottom: 60px;
 gap: 10px;
+
+ @media screen and(min-width:$desktop) {
+    margin-bottom: 0;
+  }
 }
