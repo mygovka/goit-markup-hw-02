@@ -125,7 +125,10 @@ footer.footer>div a.main-logo>span {
 
 .footer .main-logo {
     display: block;
-    margin-bottom: 20px;
+    @media screen and(max-width:$mobile) {
+         margin-bottom: 28px;
+    }
+   
 }
 
 .info{

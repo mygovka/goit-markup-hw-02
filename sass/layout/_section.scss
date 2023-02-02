@@ -18,6 +18,11 @@
   margin-bottom: 30px;
   align-items: center;
 
+  @media screen and(min-width:$desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
  
   }
   // font-size: 36px;

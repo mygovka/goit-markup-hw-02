@@ -320,7 +320,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  margin: 0;
 }
 
 .list {
@@ -404,6 +403,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .section-team {
@@ -568,6 +573,11 @@ ul {
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .menu-link {
+    font-size: 14px;
+  }
 }
 .menu-link:hover, .menu-link:focus {
   color: #2196F3;
@@ -890,7 +900,11 @@ footer.footer > div a.main-logo > span {
 
 .footer .main-logo {
   display: block;
-  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .footer .main-logo {
+    margin-bottom: 28px;
+  }
 }
 
 .info {

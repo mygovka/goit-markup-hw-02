@@ -3,8 +3,12 @@
 .team__item {
     background-color: $color-bgc;
     margin-bottom: 30px;
-   
-    // margin-right: 30px;
+   @media screen and(max-width:767px) {
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+   //  margin-right: 30px;
    
      @media screen and(min-width:$tablet){
         width: calc((100% - 30px) / 2);
@@ -15,7 +19,8 @@
         width: calc((100% - 90px) / 4);
      }
      
-     }
+     
+   }
    
  
 
